@@ -44,12 +44,12 @@ public class Photostat.Layouts.HeaderBar : Gtk.HeaderBar {
 
     construct {
         show_close_button = true;
-        title = ("Untitled");
+        title = _("Untitled");
 
-        menu = new Widgets.MenuButton ("document-open", ("Menu"), null);
+        menu = new Widgets.MenuButton ("document-open", _("Menu"), null);
 
         preferences = new Widgets.HeaderBarButton (window, "open-menu",
-            ("Preferences"), {"<Ctrl>comma"}) {
+            _("Preferences"), {"<Ctrl>comma"}) {
                 sensitive = true
             };
         // preferences.button.action_name = Photostat.Services.ActionManager.ACTION_PREFIX
